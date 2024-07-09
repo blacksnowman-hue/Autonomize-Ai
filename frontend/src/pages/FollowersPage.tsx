@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useParams } from 'react-router-dom';
-import FollowersLists from '../components/FollowersList/FollowersList';
+import FollowersLists from '../components/FollowersList/FollowersLists';
 import Header from '../components/Header/Header';
 
 const FollowersList: React.FC = () => {
@@ -18,3 +18,4 @@ const FollowersList: React.FC = () => {
 };
 
 export default FollowersList;
+

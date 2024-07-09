@@ -1,0 +1,16 @@
+{
+  "env": [
+    "browser",
+    "development",
+    "module"
+  ],
+  "imports": {
+    "react": "https://ga.jspm.io/npm:react@18.3.1/dev.index.js",
+    "react-dom": "https://ga.jspm.io/npm:react-dom@18.3.1/dev.index.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "scheduler": "https://ga.jspm.io/npm:scheduler@0.23.2/dev.index.js"
+    }
+  }
+}
