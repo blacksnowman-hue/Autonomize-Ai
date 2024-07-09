@@ -1,22 +1,39 @@
-import React from 'react';
-import { Repo } from '../../types/types';
-
-import "./RepoDetails.css"
-
-interface RepoDetailsProps {
-  repo: Repo;
-}
-
-const RepoDetails: React.FC<RepoDetailsProps> = ({ repo }) => {
-  return (
-    <div className="repo-details">
-      <h2>{repo.name}</h2>
-      <p>{repo.description}</p>
-      <p>Stars: {repo.stargazers_count}</p>
-      <p>Forks: {repo.forks_count}</p>
-      <p>Language: {repo.language}</p>
-    </div>
-  );
-};
-
-export default RepoDetails;
+.repo-list {
+    border: 1px solid #343f4d;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  .repo-list h1 {
+    margin-bottom: 10px;
+  }
+  
+  .repo-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+  }
+  
+  .repo-list li {
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+  }
+  
+  .repo-list li a {
+    display: block;
+    padding: 10px;
+    border: 1px solid #343f4d;
+    border-radius: 6px;
+    color: #0366d6;
+    text-decoration: none;
+    text-overflow: ellipsis;
+  }
+  
+  .repo-list li a:hover {
+    background-color: #4b49494d;
+  }

@@ -1,0 +1,155 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Autonomize Ai Application",
+      "description": "Autonomize Ai Application"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:8000",
+        "description": "Local server"
+      }
+    ],
+    "paths": {
+      "/api/v1/users/search": {
+        "get": {
+          "tags": [
+            "User - filter"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "username",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            },
+            {
+              "name": "location",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/v1/users/sorted": {
+        "get": {
+          "tags": [
+            "User - filter"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "sortBy",
+              "in": "query",
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/v1/users/{username}": {
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "username",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "patch": {
+          "tags": [
+            "User"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "username",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        },
+        "delete": {
+          "tags": [
+            "User"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "username",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      },
+      "/api/v1/users/{username}/friends": {
+        "get": {
+          "tags": [
+            "User"
+          ],
+          "description": "",
+          "parameters": [
+            {
+              "name": "username",
+              "in": "path",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "OK"
+            }
+          }
+        }
+      }
+    }
+  }

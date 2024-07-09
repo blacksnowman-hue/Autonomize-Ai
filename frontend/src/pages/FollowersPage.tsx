@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useParams } from 'react-router-dom';
-import FollowersLists from '../components/FollowersList/FollowersLists';
+import FollowersLists from '../components/FollowersList/FollowersList';
 import Header from '../components/Header/Header';
 
 const FollowersList: React.FC = () => {
