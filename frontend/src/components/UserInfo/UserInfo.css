@@ -5,7 +5,7 @@
 }
 
 .user-info {
-  background-color: #231f1f;
+  background-color:white;
   border: 1px solid #343f4d;
   border-radius: 6px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -32,12 +32,13 @@
 
 .user-info h2 {
   font-size: 20px;
+  color: black;
   margin-bottom: 5px;
 }
 
 .user-info p {
   font-size: 14px;
-  color: #b3c2d4;
+  color:grey;
   margin: 5px 0;
 }
 
